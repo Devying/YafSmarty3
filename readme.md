@@ -42,8 +42,7 @@ location /{
 
 ## 部署
 
-将本代码克隆下来后放到上一步nginx 配置中的root指向的目录中：
-(加入我上一步配置的nginx中root /home/wwwroot/default/YafApps )
+将本代码克隆下来后放到上一步nginx 配置中的root指向的目录中：(假如我上一步配置的nginx中root /home/wwwroot/default/YafApps )
 ```bash
 [root@lnmp YafApps]# pwd
 /home/wwwroot/default/YafApps
@@ -92,4 +91,4 @@ class AdminController extends Yaf_Controller_Abstract {
 你可以把action直接写在controller里面比如 `helloAction` 也可以拆分到到actions目录里面
 详细的可以参见鸟哥的[yaf手册](http://www.laruence.com/manual/)
 ### views目录
-views目录里面放着的就是前端模板文件了。比如admin模块的模板就放到了views/template/admin目录中。具体模板的名字你可以在代码中`$this->display('info');`来指定。
+views目录里面放着的就是前端模板文件了。比如admin模块的模板就放到了views/template/admin目录中。具体模板的名字你可以在代码中`$this->display('info');`来指定。注意template_c目录对www用户需要用写入权限。
