@@ -6,7 +6,7 @@
  * @date    2016-01-06 14:15
  * @version 1.0
  */
-require "Smarty.class.php";
+//require "Smarty.class.php";
 
 
 class Smarty_Adapter implements Yaf_View_Interface {

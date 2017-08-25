@@ -77,7 +77,7 @@ app目录里面放着主要的业务代码。比如里面的admin模块，控制
 
 ```php
 <?php
-class AdminController extends Yaf_Controller_Abstract {
+class AdminController extends Base_Control {
     public $actions=array(
         "info"=>"actions/Info.php",
         "m3u8"=>"actions/M3u8.php",

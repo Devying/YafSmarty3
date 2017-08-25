@@ -3,7 +3,7 @@ define('ROOT_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 
 #设置全局访问类库的位置
 ini_set('yaf.library',ROOT_PATH."/library");
-
+require_once ROOT_PATH."/library/Smarty/Smarty.class.php";
 #取到模块名称 随时设置MODULE为模块当前访问模块名称
 
 $uri = $_SERVER['REQUEST_URI'];

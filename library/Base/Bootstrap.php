@@ -38,9 +38,10 @@ class Base_Bootstrap extends Yaf_Bootstrap_Abstract {
 
     public function _initView ( Yaf_Dispatcher $dispatcher ) {
         //在这里注册自己的view控制器，例如smarty,firekylin
-        ini_set('yaf.use_spl_autoload',0 );
-        Yaf_Dispatcher::getInstance ()->disableView ();
+        //ini_set('yaf.use_spl_autoload',0 );
+        //Yaf_Dispatcher::getInstance ()->disableView ();
         //echo "_initView<br/>";
+        //Yaf_Dispatcher::getInstance()->autoRender(true);
     }
 
     public function _initDefaultName ( Yaf_Dispatcher $dispatcher ) {
